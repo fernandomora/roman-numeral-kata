@@ -80,5 +80,6 @@ class RomanNumeralSpec extends FlatSpec with Matchers {
     assert(RomanNumerals.fromNumber(864) === "DCCCLXIV")
     assert(RomanNumerals.fromNumber(750) === "DCCL")
     assert(RomanNumerals.fromNumber(999) === "CMXCIX")
+    assert(RomanNumerals.fromNumber(3001) === "MMMI")
   }
 }
