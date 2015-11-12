@@ -1,12 +1,18 @@
 object RomanNumerals {
 
   def fromNumber(n: Int): String = {
-    if (n <= 3) "I" * n
-    else if (n < 5) "IV"
-    else if (n == 5) "V"
-    else if (n == 6) "VI"
-    else if (n == 7) "VII"
-    else "VIII"
+    if (n == 4) "IV"
+    else {
+      val s = if (n >= 5) "V" else ""
+      s + {
+        (n % 5) match {
+          case 0 => ""
+          case 1 => "I"
+          case 2 => "II"
+          case 3 => "III"
+        }
+      }
+    }
   }
 
 }
