@@ -44,4 +44,10 @@ class RomanNumeralSpec extends FlatSpec with Matchers {
     assert(RomanNumerals.fromNumber(12) === "XII")
     assert(RomanNumerals.fromNumber(13) === "XIII")
   }
+
+  it should "til thirty nine" in {
+    assert(RomanNumerals.fromNumber(19) === "XIX")
+    assert(RomanNumerals.fromNumber(24) === "XXIV")
+    assert(RomanNumerals.fromNumber(39) === "XXXIX")
+  }
 }
