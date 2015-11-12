@@ -7,7 +7,8 @@ object RomanNumerals {
 
     else if (n < 5)  "I" + fromNumber(n - 1)
     else if (n < 10) "V" + fromNumber(n - 5)
-    else if (n < 50) "X" + fromNumber(n - 10)
+    else if (n < 40) "X" + fromNumber(n - 10)
+    else if (n < 50) "XL" + fromNumber(n - 40)
 
     else "unknown"
   }
