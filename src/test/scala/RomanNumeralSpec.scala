@@ -34,4 +34,8 @@ class RomanNumeralSpec extends FlatSpec with Matchers {
   it should "ten" in {
     assert(RomanNumerals.fromNumber(10) === "X")
   }
+
+  it should "nine" in {
+    assert(RomanNumerals.fromNumber(9) === "IX")
+  }
 }
