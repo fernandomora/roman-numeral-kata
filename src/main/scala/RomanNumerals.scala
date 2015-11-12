@@ -1,4 +1,15 @@
 object RomanNumerals {
+  val conversions = List( // less than N -> "..."+from(...)
+    1 -> "",
+    4 -> "I",
+    5 -> "IV",
+    9 -> "V",
+    10 -> "IX",
+    40 -> "L",
+    50 -> "XL",
+    90 -> "L",
+    100 -> "XC",
+    400 -> "C")
 
   def fromNumber(n: Int): String = {
     if (n  < 1) ""
