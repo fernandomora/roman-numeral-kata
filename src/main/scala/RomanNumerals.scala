@@ -13,7 +13,7 @@ object RomanNumerals {
   )
 
   def fromNumber(n: Int): String = {
-    conversions.find(n >= _._1).map{ case (x, roman) =>
+    conversions.collectFirst{ case (x, roman) if n >= x =>
       roman + fromNumber(n-x)
     }.getOrElse("")
   }
