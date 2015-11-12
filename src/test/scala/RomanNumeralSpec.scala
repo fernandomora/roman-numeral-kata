@@ -20,6 +20,7 @@ class RomanNumeralSpec extends FlatSpec with Matchers {
   it should "five" in {
     assert(RomanNumerals.fromNumber(5) === "V")
   }
+
   it should "four" in {
     assert(RomanNumerals.fromNumber(4) === "IV")
   }
@@ -28,5 +29,9 @@ class RomanNumeralSpec extends FlatSpec with Matchers {
     assert(RomanNumerals.fromNumber(6) === "VI")
     assert(RomanNumerals.fromNumber(7) === "VII")
     assert(RomanNumerals.fromNumber(8) === "VIII")
+  }
+
+  it should "ten" in {
+    assert(RomanNumerals.fromNumber(10) === "X")
   }
 }
