@@ -38,4 +38,10 @@ class RomanNumeralSpec extends FlatSpec with Matchers {
   it should "nine" in {
     assert(RomanNumerals.fromNumber(9) === "IX")
   }
+
+  it should "til thirteen" in {
+    assert(RomanNumerals.fromNumber(11) === "XI")
+    assert(RomanNumerals.fromNumber(12) === "XII")
+    assert(RomanNumerals.fromNumber(13) === "XIII")
+  }
 }
